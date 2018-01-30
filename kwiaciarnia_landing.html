@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kwiaciarnia Sote</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Ada Iwanczyk">
+    <meta name="description" content="Florist webpage presenting the flowershop and wedding offer">
+    <meta name="keywords" content="flowers, florist, wedding">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,800|Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="container">
+          <ul class="menu-main">
+            <li class="item">
+              <a href="#oferta">Oferta</a>
+            </li>
+            <li class="item">
+              <a href="#galerie">Galeria</a>
+            </li>
+            <li class="item">
+              <a href="#onas">O nas</a>
+            </li>
+            <li class="item">
+              <a href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="menu-social">
+            <li class="item twitters">
+              <a href=""><img src="twitter.png" alt="Twitter" class="twit1"></a>
+              <a href=""><img src="twitter2.png" alt="Twitter" class="twit2"></a>
+            </li>
+            <li class="item instagrams">
+              <a href=""><img src="instagram.png" alt="Instagram" class="inst1"></a>
+              <a href=""><img src="instagram2.png" alt="Instagram" class="inst2"></a>
+            </li>
+            <li class="item facebooks">
+              <a href=""><img src="facebook.png" alt="Facebook" class="face1"></a>
+              <a href=""><img src="facebook2.png" alt="Facebook" class="face2"></a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+      <section class="top">
+        <div class="container">
+            <img src="top.png" alt="Obraz kwiatow">
+        </div>
+      </section>
+      <section class="offer" id="oferta">
+        <div class="container">
+        <h2 class="h2 h2--white">Oferta</h2>
+        <p class="text offer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris</p>
+        <ul class="options">
+          <li id="option1">
+            <img src="kwiaty1.png" alt="kwiaty" id="flowers">
+            <p class="p-options">Kwiaty i bukiety</p>
+          </li>
+          <li id="option2">
+            <img src="slub1.png" alt="slub" id="wedding">
+            <p class="p-options">Ślub</p>
+          </li>
+          <li id="option3">
+            <img src="dekoracje1.png" alt="dekoracje" id="decoration">
+            <p class="p-options">Dekoracje</p>
+          </li>
+        </ul>
+      </div>
+      </section>
+      <section class="galleries" id="galerie">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <img src="kwiaciarnia.jpg" alt="Dekoracja ślubna" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="kwiaciarnia2.jpg" alt="Dekoracja stołu" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="sluby.jpg" alt="Młoda para - wianek" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="sluby2.jpg" alt="Młoda para - wianek" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="container1">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="onas">
+        <div class="container">
+          <h2 class="h2 h2--black">O nas</h2>
+            <div class="flex">
+              <div class="work" id="mywork">
+                <h3 class="h3">Praca moja pasja</h3>
+                <p class="text work__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique...</p>
+                <button class="button button--work">Czytaj więcej</button>
+              </div>
+              <div class="me">
+                <img src="ada.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="delivery">
+        <h2 class="h2 h2--black">Kwiatowy kurier</h2>
+        <p class="text delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique</p>
+        <img src="kurier.png" alt="Kurier kwiatowy">
+      </section>
+      <section class="contact" id="kontakt">
+        <h2 class="h2 h2--white">Kontakt</h2>
+        <form action="" target="">
+          <fieldset class="fieldset">
+            <legend></legend>
+            <label class="label" for="name">Imię</label>
+            <input class="input" type="text" id="name" placeholder="Twoje imię">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" id="email" placeholder="Twój email">
+            <label class="label" for="message">Wiadomość</label>
+            <textarea class="textarea" rows="8" id="message" placeholder="Twoja wiadomość"></textarea>
+            <button class="contact-button" type="submit">Wyślij</button>
+        </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      All Rights Reserved, Sote 2018
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

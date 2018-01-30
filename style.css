@@ -1,0 +1,601 @@
+/*
+1. Reset
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+2. Style globalne
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  color: #818080;
+  font-family: 'EB Garamond';
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+section {
+  text-align: center;
+}
+/*
+3. Grid
+*/
+.col-1 {
+  width: 8.3%;
+  float: left;
+}
+.col-2 {
+  width: 16.6%;
+  float: left;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+}
+.col-4 {
+  width: 33.3%;
+  float: left;
+}
+.col-5 {
+  width: 41.6%;
+  float: left;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+.col-7 {
+  width: 58.3%;
+  float: left;
+}
+.col-8 {
+  width: 66.6%;
+  float: left;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+}
+.col-10 {
+  width: 83.3%;
+  float: left;
+}
+.col-11 {
+  width: 91.6%;
+  float: left;
+}
+.col-12 {
+  width: 100%;
+  float: left;
+}
+
+[class^="col-"] {
+  float: left;
+}
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+	overflow: hidden;
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+/*
+4. Typografia
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.h1 {
+	font-size: 42px;
+  letter-spacing: 3px;
+	padding-bottom: 40px;
+	font-weight: 400;
+}
+.h2 {
+	font-size: 32px;
+  letter-spacing: 3px;
+	padding-bottom: 40px;
+	font-weight: 400;
+}
+.h2--white {
+	color: #ffffff;
+}
+.h2--black {
+  color: #818080;
+}
+.p-options {
+  color: #ffffff;
+  font-size: 19px;
+  margin-top: 15px;
+}
+.h3 {
+	font-size: 25px;
+  text-align: left;
+  padding: 70px 0px 20px 40px;
+}
+.text {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.offer__text {
+  width: 600px;
+  margin: 0px auto 40px;
+  color: white;
+}
+.work__text {
+	text-align: left;
+  width: 350px;
+  padding: 0px 0px 30px 40px;
+}
+.delivery__text {
+  width: 570px;
+  margin: 0px auto 40px;
+}
+/*
+5. Nagłowek
+*/
+.navigation {
+  position: fixed;
+	z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url('logo.png') 50% 50% no-repeat #f5eee8;
+  color: #818080;
+  padding: 50px 0;
+}
+.menu-main {
+  text-align: left;
+	float: left;
+	width: 50%;
+}
+.menu-social {
+  text-align: right;
+	float: left;
+	width: 50%;
+}
+.item {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 15px;
+}
+.twitters .twit2 {
+  display: none;
+}
+.twitters:hover .twit1 {
+  display: none;
+}
+.twitters:hover .twit2 {
+  display: block;
+}
+.instagrams .inst2 {
+  display: none;
+}
+.instagrams:hover .inst1 {
+  display: none;
+}
+.instagrams:hover .inst2 {
+  display: block;
+}
+.facebooks .face2 {
+  display: none;
+}
+.facebooks:hover .face1 {
+  display: none;
+}
+.facebooks:hover .face2 {
+  display: block;
+}
+
+nav a {
+  font-family: "Lato";
+  color: #818080;
+}
+nav a:hover {
+  color: #c5767f;
+}
+.menu-main li:first-child {
+  margin-left: 0;
+}
+.menu-social li:last-child {
+  margin-right: 0;
+}
+/*
+6. Style sekcji
+*/
+.top {
+  background: #f5eee8;
+  margin: 110px 0 0 0;
+}
+.top img {
+  width: 990px;
+  padding: 0px 0px 60px 0px;
+}
+.offer {
+  background: #d6a29f;
+  padding: 60px 0 60px;
+}
+.galleries {
+  background: #f5eee8;
+  padding: 60px 0;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.column img:hover {
+    opacity: 1;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container1 {
+    position: relative;
+    display: none;
+}
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+.options li {
+  display: inline-block;
+  width: 17%;
+}
+.about {
+  background: #dcddcd;
+  padding: 70px 0 70px;
+}
+.work {
+	width: 40%;
+	background: #ffffff;
+}
+.me{
+	width: 60%;
+	height: 400px;
+}
+.me img {
+	height: 400px;
+}
+.button {
+	padding: 13px 30px;
+	font-size: 15px;
+	border: 1px solid #c5767f;
+	float: left;
+	margin: 0px 0px 0px 40px;
+}
+.button--work {
+  background-color: #ffffff;
+  color: #c5767f;
+}
+.button--work:hover {
+  background-color: #c5767f;
+  color: #ffffff;
+}
+.delivery {
+  background: #f5eee8;
+  padding: 70px 0 70px;
+}
+.contact {
+  background: #c5767f;
+  padding: 70px 0 10px;
+}
+.input {
+  display: block;
+  margin: 0 auto 30px;
+  background-color: #c5767f;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  height: 40px;
+  width: 600px;
+  font-size: 16px;
+  padding: 0 0 0 15px;
+}
+.input::placeholder {
+  color: #ffffff;
+}
+.textarea {
+  display: block;
+  margin: 0 auto 30px;
+  background-color: #c5767f;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 16px;
+  padding: 15px 0 0 15px;
+	width: 100%;
+}
+.fieldset {
+	width: 600px;
+	margin: auto;
+	text-align: left;
+}
+.textarea::placeholder {
+  color: #ffffff;
+}
+form {
+	position: relative;
+}
+.label {
+	color: #ffffff;
+}
+.contact-button {
+  padding: 13px 70px;
+  background-color: #ffffff;
+  color: #c5767f;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  margin: 0 0 70px 0;
+}
+.contact-button:hover {
+  padding: 13px 70px;
+  background-color: #c5767f;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  margin: 0 0 70px 0;
+}
+footer {
+  color: #818080;
+  font-size: 14px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f5eee8;
+}
+/*
+7. Wersja na tablet
+*/
+@media screen and (max-width: 758px){
+	.container {
+		max-width: 680px;
+	  margin: 0 auto;
+	}
+	.top img {
+		width: 680px;
+	}
+	.item {
+	  display: inline-block;
+	  margin: 0 15px;
+	  font-size: 15px;
+	}
+	.menu-main {
+		display: none;
+	}
+	.menu-social {
+		float: right;
+	}
+	.options li {
+	  display: inline-block;
+		width: 30%;
+	}
+	.flex {
+		display: inline-block;
+	}
+	.work {
+		display: inline-block;
+		background: #ffffff;
+		width: 100%;
+		padding-bottom: 40px;
+		height: 300px;
+	}
+	.work__text {
+		text-align: left;
+	  width: 640px;
+	  padding: 0px 40px 30px 40px;
+	}
+	.h1 {
+		padding-bottom: 30px;
+	}
+	.offer {
+	  padding: 40px 0 40px;
+	}
+	.about {
+	  padding: 40px 0 40px;
+	}
+	.h2 {
+	  padding: 50px 0px 30px 40px;
+	}
+	.delivery {
+	  padding: 40px 0 40px;
+	}
+	.contact {
+	  padding: 40px 0 0px;
+	}
+	.contact-button {
+	  margin: 0 0 40px 0;
+	}
+	.contact-button:hover {
+	  margin: 0 0 40px 0;
+	}
+}
+/*
+7. Wersja na telefon
+*/
+@media screen and (max-width: 320px){
+	.container {
+		max-width: 260px;
+	  margin: 0 auto;
+	}
+	.top img {
+	  width: 260px;
+	  padding: 0px 0px 0px 0px;
+	}
+	.h1 {
+		font-size: 28px;
+	  letter-spacing: 3px;
+		padding-bottom: 20px;
+		font-weight: 400;
+	}
+	.offer__text {
+	  width: 240px;
+	  margin: 0px auto 20px;
+	  color: white;
+	}
+	.navigation {
+	  background: url('logo.png') 50% 50% no-repeat #f5eee8;
+	  color: #818080;
+	  padding: 40px 0;
+	}
+	.top {
+	  background: #f5eee8;
+	  margin: 100px 0 0 0;
+	}
+	.options li {
+	  display: block;
+		width: 100%;
+		padding: 18px 0px;
+	}
+	.galleries {
+	  padding: 20px 0;
+	}
+	.h2 {
+	  padding: 30px 0px 20px 20px;
+	}
+	.work__text {
+		text-align: left;
+	  width: 260px;
+	  padding: 0px 20px 20px 20px;
+	}
+	.work {
+		height: 390px;
+	}
+	.me img {
+		height: 100%;
+	}
+	.me{
+		width: 100%;
+		height: 200px;
+	}
+	.button--work {
+		margin: 0px 0px 20px 20px;
+	}
+	.delivery__text {
+	  width: 240px;
+	  margin: 0px auto 20px;
+	}
+	.delivery img {
+		width: 260px;
+	}
+	.input {
+	  margin: 0 auto 30px;
+	  height: 40px;
+	  width: 260px;
+	}
+	.fieldset {
+		width: 260px;
+	}
+	.contact-button {
+	  padding: 13px 110px;
+	  background-color: #ffffff;
+	  color: #c5767f;
+	  font-size: 15px;
+	  border: 1px solid #ffffff;
+	  margin: 0 0 40px 0;
+	}
+	.contact-button:hover {
+	  padding: 13px 110px;
+	  background-color: #c5767f;
+	  color: #ffffff;
+	  font-size: 15px;
+	  border: 1px solid #ffffff;
+	  margin: 0 0 40px 0;
+	}
+	footer {
+	  padding: 40px 20px;
+	}
+}
+/*
+Hover Kwiaciarnia
+*/
+.flowershop {
+	background-color: #869c8f;
+}
+.flowershop:hover .imagekwiaciarnia {
+	opacity: 0.3;
+}
+.wedding {
+	background-color: #869c8f;
+}
+.wedding:hover .imagesluby {
+	opacity: 0.3;
+}
